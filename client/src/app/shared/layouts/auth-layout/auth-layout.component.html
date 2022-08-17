@@ -1,0 +1,33 @@
+
+  <nav style="background-color: #AFC97E;"> 
+    <div class="nav-wrapper" style="background-color: #AFC97E;">
+        <!-- <a routerLink="/" class="brand-logo">
+            <img src="/uploads/logo-min.png" alt="logo">
+        </a> -->
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li routerLinkActive="active">
+                <a routerLink="main" style="color: black;">Главная</a>
+            </li>
+            <!-- <li routerLinkActive="active">
+                <a routerLink="login" style="color: black;">Вход</a>
+            </li>
+            <li routerLinkActive="active">
+                <a routerLink="register" style="color: black;">Регистрация</a>
+            </li> -->
+        </ul>
+        <ul id="slide-out" class="sidenav" #sidenav>
+            <li><a routerLink="" class="waves-effect sidenav-close" (click)="toDistance(0)"><i class="material-icons">home</i>Главная</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="waves-effect sidenav-close" routerLink="/" (click)="toDistance(460)"><i class="material-icons">dvr</i>Информация</a></li>
+            <li><a class="waves-effect sidenav-close" routerLink="/" (click)="toDistance(1350)"><i class="material-icons">video_library</i>Проповеди</a></li>
+            <li><a class="waves-effect sidenav-close" routerLink="feedback"><i class="material-icons">forum</i>Написать нам</a></li>
+
+          </ul>
+          <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up"><i class="material-icons">menu</i></a>
+    </div>
+ </nav>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+<!-- class="auth-block" -->
