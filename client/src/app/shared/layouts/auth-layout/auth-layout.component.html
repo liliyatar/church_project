@@ -5,9 +5,12 @@
             <img src="/uploads/logo-min.png" alt="logo">
         </a> -->
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li routerLinkActive="active">
-                <a routerLink="main" style="color: black;">Главная</a>
+            <li>
+                <a routerLink="main">Главная</a>
             </li>
+            <li><a routerLink="/" (click)="toDistance(350)">Информация</a></li>
+            <li><a routerLink="/" (click)="toDistance(1350)">Проповеди</a></li>
+            <li><a routerLink="feedback">Написать нам</a></li>
             <!-- <li routerLinkActive="active">
                 <a routerLink="login" style="color: black;">Вход</a>
             </li>
@@ -18,7 +21,7 @@
         <ul id="slide-out" class="sidenav" #sidenav>
             <li><a routerLink="" class="waves-effect sidenav-close" (click)="toDistance(0)"><i class="material-icons">home</i>Главная</a></li>
             <li><div class="divider"></div></li>
-            <li><a class="waves-effect sidenav-close" routerLink="/" (click)="toDistance(460)"><i class="material-icons">dvr</i>Информация</a></li>
+            <li><a class="waves-effect sidenav-close" routerLink="/" (click)="toDistance(350)"><i class="material-icons">dvr</i>Информация</a></li>
             <li><a class="waves-effect sidenav-close" routerLink="/" (click)="toDistance(1350)"><i class="material-icons">video_library</i>Проповеди</a></li>
             <li><a class="waves-effect sidenav-close" routerLink="feedback"><i class="material-icons">forum</i>Написать нам</a></li>
 
