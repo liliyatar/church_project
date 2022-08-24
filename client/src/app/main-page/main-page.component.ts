@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { MaterialInstance, MaterialService } from '../shared/classes/material.service';
 
 @Component({
@@ -8,7 +7,6 @@ import { MaterialInstance, MaterialService } from '../shared/classes/material.se
   styleUrls: ['./main-page.component.css'],
 })
 export class MainPageComponent implements AfterViewInit {
-
   @ViewChild('parallax1') parallax1Ref: ElementRef;
   public parallax1: MaterialInstance;
   @ViewChild('parallax2') parallax2Ref: ElementRef;

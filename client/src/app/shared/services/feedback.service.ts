@@ -7,9 +7,9 @@ import { Feedback } from "../interfaces";
     providedIn: 'root'
 })
 export class FeedbackService {
-    constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-    create(feedback: Feedback): Observable<Feedback> {
-        return this.http.post<Feedback>('/api/feedback', feedback);
-    }
+  create(feedback: Feedback): Observable<Feedback> {
+    return this.http.post<Feedback>('/api/feedback', feedback);
+  }
 }

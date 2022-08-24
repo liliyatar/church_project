@@ -1,13 +1,12 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MaterialInstance, MaterialService } from '../shared/classes/material.service';
+import { MaterialService } from '../shared/classes/material.service';
 import { Feedback } from '../shared/interfaces';
 import { FeedbackService } from '../shared/services/feedback.service';
 
 @Component({
   selector: 'app-feedback-page',
   templateUrl: './feedback-page.component.html',
-  styleUrls: ['./feedback-page.component.css'],
 })
 export class FeedbackPageComponent implements OnInit {
   public form: FormGroup;
