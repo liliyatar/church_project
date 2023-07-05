@@ -1,131 +1,199 @@
-<app-navbar></app-navbar>
+<div class="wrapper">
+    <main class="main">
+        <div class="main__container">
+            <div class="main__header">
+              <h1 class="main__title">
+                <span class="main__title-custom">Виноградник</span> церковь
+              </h1>
+              <ul class="social__media-icons">
+                <li>
+                  <a href="">
+                    <i class="material-icons">call</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="material-icons">mail</i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="material-icons">video_library</i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <section class="main__section main">
+                <div class="main__content _anim-items _anim-no-hide">
+                    <h2 class="main__subtitle">
+                      Добро пожаловать в <span class="custom__text">Виноградник!</span>
+                    </h2>
+                    <div class="main__text">
+                        <p>Церковь — это семья!</p>
+                        <p>
+                          Наша церковь является частью международного христианского движения, которое насчитывает около 1600 церквей более, чем в 60-ти странах.
+                        </p>
+                        <p>
+                          Норильский «Виноградник» существует с 2015-го года и приглашает всех желающих посетить воскресные богослужения в <span class="custom__text">12:00</span> по адресу: <span class="custom__text">Талнах, ул. Енисейская 17</span>.
+                        <p>
+                    </div>
+                    <a routerLink="/history" class="main__link">Узнать больше</a>
+                </div> 
+                <div class="main__image _anim-items _anim-no-hide">
+                    <div class="slider" #slider>
+                      <ul class="slides">
+                        <li>
+                          <img src="/uploads/main-slider/01.jpg">
+                        </li>
+                        <li>
+                          <img src="/uploads/main-slider/02.jpg">
+                        </li>
+                        <li>
+                          <img src="/uploads/main-slider/03.jpg">
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="our-values__section our-values">
+              <h2 class="our-values__title title-header">Наши ценности</h2>
+              <div class="our-values__info">
+                <div class="our-values__text">
+                  <p>
+                    Каждая церковь «Виноградник» по-своему уникальна, но в то же время есть у нас и общие факторы, которые определяют нас как движение — это наши ценности.
+                    Эти ценности описывают важные аспекты «Виноградника», которые объясняют, кто мы и почему мы делаем то, что делаем.
+                    Ценности – это не символ веры, не цели церкви и не ее личный стиль. Ценности нельзя увидеть невооруженным взглядом.
+                  </p>
+                </div>
+                <div class="our-values__quote quote">
+                  <div class="quote__title">Основатель движения «Виноградник» Джон Уимбер:</div>
+                  <div class="quote__text">
+                    <p>
+                      "То, на что мы посвящаем наше время, энергию и деньги, отражает наши истинные ценности, которые мы проживаем, в независимости от того, что мы называем нашими ценностями".
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="our-values__more">
+                <a routerLink="/our-values" class="our-values__link" (click)="toDistance(0)">Подробнее</a>
+                о ценностях Норильского "Виноградника":
+              </div> 
+              <div class="carousel items" #carousel>
+                <div class="carousel-item items__item item" href="#one!">
+                  <i class="medium material-icons item__icon">book</i>
+                  <div class="item__content">
+                    <h3 class="item__title">1. Библия</h3>
+                    <p class="item__text">
+                      Мы ценим Слово Божье. Мы верим, что Дух Святой вдохновил авторов Библии. Мы хотим быть послушными тому, что написано в Библии, чтобы становится более похожими на Христа.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item items__item item" href="#two!">
+                  <i class="medium material-icons item__icon">cloud</i>
+                  <div class="item__content">
+                    <h3 class="item__title">2. Божье Царство</h3>
+                    <p class="item__text">
+                      Царство – это динамичное правление Бога. Бог обладает абсолютной властью; на земле Он активно проявляет свое правление через тех, кто желает этого.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item items__item item" href="#three!">
+                  <i class="medium material-icons item__icon">group</i>
+                  <div class="item__content">
+                    <h3 class="item__title">3. Отношения</h3>
+                    <p class="item__text">
+                      Сущность христианства – отношения. Мы были созданы по образу и подобию Божьему, потому что основная цель нашего существования – иметь отношения с Богом и ближними.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item items__item item" href="#four!">
+                  <i class="medium material-icons item__icon">person</i>
+                  <div class="item__content">
+                    <h3 class="item__title">4. Ценность личности</h3>
+                    <p class="item__text">
+                      Каждый человек ценен. Каким образом это проявляется в нашей церкви? Мы хотим быть похожими на Христа, а значит иметь благодать.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item items__item item" href="#five!">
+                  <i class="medium material-icons item__icon">favorite</i>
+                  <div class="item__content">
+                    <h3 class="item__title">5. Господство Иисуса Христа</h3>
+                    <p class="item__text">
+                      Иисус задает нам цель и направление. Мы желаем, чтобы через силу Духа Святого любовь, благодать, истина, чистота, сила Иисуса проявлялась в наших жизнях во всем кем мы являемся, и что мы делаем.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item items__item item" href="#six!">
+                  <i class="medium material-icons item__icon">pan_tool</i>
+                  <div class="item__content">
+                    <h3 class="item__title">6. Поклонение</h3>
+                    <p class="item__text">
+                      Мы желаем поклоняться Богу всем сердцем, всей душой и разумением. Мы хотим, чтобы наше поклонение Ему было наполнено Духом Святым, помогало приблизиться к Богу.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>  
+            <section class="more-info__section more-info">
+              <h3 class="more-info__title title-header">Узнайте больше о нашей церкви</h3>     
+              <div class="more-info__cards cards">
+                <div class="cards__item item-card">
+                  <div class="item__image item-card__image">
+                    <img src="/uploads/pic01.jpeg">
+                  </div>
+                  <div class="item__content item-card__content">
+                    <h4 class="item__header item-card__header">Во что мы верим</h4>
+                    <p>Прочтите наш Символ веры и узнайте о наших ценностях.</p>
+                  </div>
+                  <div class="item__action action">
+                    <a href="#" class="action__link">Подробнее</a>
+                  </div>
+                </div>
 
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row">
-            <h3 style="background-color: #877b6673; border-radius: 10px; font-weight: bold; font-family: 'ProximaNova-Black', arial, sans-serif;;" class="header col s12 light">
-                Церковь евангельских христиан "Виноградник"
-            </h3>
+                <div class="cards__item item-card">
+                  <div class="item__image">
+                    <img src="/uploads/pic03.jpeg">
+                  </div>
+                  <div class="item__content item-card__content">
+                    <h4 class="item__header">Кто мы</h4>
+                    <p>История движения "Виноградник".</p>
+                  </div>
+                  <div class="item__action">
+                    <a href="#" class="action__link">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="cards__item item-card">
+                  <div class="item__image">
+                    <img src="/uploads/pic04.jpeg">
+                  </div>
+                  <div class="item__content item-card__content">
+                    <h4 class="item__header">Ресурсы</h4>
+                    <p>Теология Виноградника и книги для духовного роста и служения.</p>
+                  </div>
+                  <div class="item__action action">
+                    <a href="#" class="action__link">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="cards__item item-card">
+                  <div class="item__image">
+                    <img src="/uploads/pic05.jpeg">
+                  </div>
+                  <div class="item__content item-card__content">
+                    <h4 class="item__header">Я здесь впервые</h4>
+                    <p>Много полезной информации для тех, кто проявляет интерес к христианству.</p>
+                  </div>
+                  <div class="item__action action">
+                    <a href="#" class="action__link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </section>
         </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax" #parallax1><img src="/uploads/background1.jpg" alt="Unsplashed background img 1" style="filter: blur(3px);"></div>
+    </main>
+    <app-navbar
+      class="sidebar"
+    ></app-navbar>
 </div>
-
-<div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">date_range</i></h2>
-            <h5 class="center" style="font-weight: bold;">Собрания</h5>
-
-            <p class="center light">Каждое воскресенье</p>
-            <p class="center light">Время: 12:00</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">location_on</i></h2>
-            <h5 class="center" style="font-weight: bold;">Адрес</h5>
-
-            <p class="center light">Талнах, ул. Енисейская 17</p>
-            <p class="center light">Норильск, Россия</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">phone_iphone</i></h2>
-            <h5 class="center" style="font-weight: bold;">Контакты</h5>
-            <p class="center light">+7 913 530 22 09</p>
-            <p class="center light">churchvinogradnik@gmail.com</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-</div>
-
-<div class="parallax-container valign-wrapper">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row center">
-        <h6 class="center header col s12 light" style="font-weight: bold;"></h6>
-        </div>
-      </div>
-    </div>
-    <div class="parallax" #parallax2><img src="/uploads/background2.jpg" alt="Unsplashed background img 2"></div>
-</div>
-
-<div class="container">
-  <div class="section">
-    <div class="row">
-      <div class="col s12 center">
-          <div class="icon-block">
-              <h2 class="center brown-text" style="margin: 0;"><i class="material-icons">video_library</i></h2>
-              <h5 class="center" style="margin: 0 0 20px 0; font-weight: bold;">Проповеди</h5>
-          </div>
-      </div>
-      <div class="col s12" style="margin-top: 20px;">
-          <div class="video-container z-depth-3" style="border-radius: 10px;">
-              <iframe src="//www.youtube.com/embed/uWLb1Inhj8o?rel=0" frameborder="0" allowfullscreen></iframe>
-          </div>
-      </div>
-      <div class="col s12" style="margin-top: 20px;">
-        <div class="video-container z-depth-3" style="border-radius: 10px;">
-            <iframe src="//www.youtube.com/embed/-MrvcQatrYY?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col s12" style="margin-top: 20px;">
-        <div class="video-container z-depth-3" style="border-radius: 10px;">
-            <iframe src="//www.youtube.com/embed/DFVIe-2H8IA?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col s12" style="margin-top: 20px; margin-bottom: 20px;">
-        <div class="video-container z-depth-3" style="border-radius: 10px;">
-            <iframe src="//www.youtube.com/embed/8iZJfcyUugo?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div>
-        <h6 class="center">
-          <a href="https://www.youtube.com/channel/UCWxxa2khLOqHmhEp3P4E-Qw/featured" style="color: black;">Смотреть больше...
-          </a>
-        </h6>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="parallax-container valign-wrapper">
-  <div class="section no-pad-bot">
-    <div class="container">
-      <div class="row center">
-        <h6 class="center header col s12 light type1" style="font-weight: bold;">
-          Церковь - это семья. Каждый человек в Доме Божьем обретёт друзей, ощутит Любовь Отца и наполнится словом Божьим. Двери церкви всегда открыты - приходи, мы тебя ждем!
-        </h6>
-      </div>
-    </div>
-  </div>
-  <div class="parallax" #parallax3><img src="/uploads/background3.jpg" alt="Unsplashed background img 3"></div>
-</div>
-
-<footer class="page-footer" style="background-color: #AFC97E;">
-  <div class="container">
-    <div class="row center">
-      <h6 class="white-text">Церковь евангельских христиан "Виноградник"</h6>
-      <a href="https://www.youtube.com/channel/UCWxxa2khLOqHmhEp3P4E-Qw/featured">
-          <img src="/uploads/youtube-icon.svg" alt="youtube icon" style="height: 20px; transform: translate(0px, 2px);">
-      </a>
-    </div>
-  </div>
-  <div class="footer-copyright">
-      <div class="container center">
-        <p>© 2022 vinogradnik-church.com</p>
-      </div>
-  </div>
-</footer>

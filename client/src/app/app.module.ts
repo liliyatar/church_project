@@ -10,6 +10,15 @@ import { LoaderComponent } from './shared/components/loader/loader.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { FeedbackPageComponent } from './feedback-page/feedback-page.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { ResourcesPageComponent } from './resources-page/resources-page.component';
+import { HistoryPageComponent } from './history-page/history-page.component';
+import { CreedPageComponent } from './creed-page/creed-page.component';
+import { OurValuesPageComponent } from './our-values-page/our-values-page.component';
+import { IntroductionPageComponent } from './introduction-page/introduction-page.component';
+import { RelationshipPageComponent } from './relationship-page/relationship-page.component';
+import { ExpectationPageComponent } from './expectation-page/expectation-page.component';
+import { BaptismPageComponent } from './baptism-page/baptism-page.component';
+import { BecameChristianPageComponent } from './became-christian-page/became-christian-page.component';
 
 @NgModule({
   imports: [
@@ -20,12 +29,21 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
     CommonModule,
     AppRoutingModule,
   ],
-  declarations: [
+  declarations: [										
     AppComponent,
     MainPageComponent,
     FeedbackPageComponent,
     LoaderComponent,
     NavbarComponent,
+      ResourcesPageComponent,
+      HistoryPageComponent,
+      CreedPageComponent,
+      OurValuesPageComponent,
+      IntroductionPageComponent,
+      RelationshipPageComponent,
+      ExpectationPageComponent,
+      BaptismPageComponent,
+      BecameChristianPageComponent
   ],
   bootstrap: [AppComponent]
 })

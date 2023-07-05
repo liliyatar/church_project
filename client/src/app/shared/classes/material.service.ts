@@ -14,7 +14,7 @@ export interface MaterialDatePicker extends MaterialInstance {
 
 export class MaterialService {
     static toast(message: string) {
-        M.toast({html: message});
+        M.toast({html: message, classes: 'rounded purple darken-2'});
     }
 
     static initializeFloatingButton(ref: ElementRef) {
@@ -51,5 +51,17 @@ export class MaterialService {
 
     static initSidenav(ref: ElementRef): MaterialInstance {
         return M.Sidenav.init(ref.nativeElement);
+    }
+
+    static initDropDown(ref: ElementRef): MaterialInstance {
+        return M.Dropdown.init(ref.nativeElement, {coverTrigger: false});
+    }
+
+    static initCarousel(ref: ElementRef): MaterialInstance {
+        return M.Carousel.init(ref.nativeElement, {fullWidth: false, indicators: false, duration: 350, dist: -50, shift: 5, padding: 100});
+    }
+
+    static initSlider(ref: ElementRef): MaterialInstance {
+        return M.Slider.init(ref.nativeElement, {indicators: true, interval: 3000});
     }
 }

@@ -1,0 +1,103 @@
+.baptism__section {
+}
+.baptism {
+}
+.baptism__title {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+.title-header {
+}
+.baptism__image {
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.baptism__image img {
+	border-radius: 10px;
+	max-width: 100%;
+}
+.baptism__info {
+}
+.baptism__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	padding-top: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	border-top: solid 1px rgba(210, 215, 217, 0.75);
+}
+.baptism__item {
+	flex: 1 1 45%;
+}
+.item-baptism {
+}
+.item-baptism__title {
+	margin-bottom: 25px;
+  font-family: "Roboto Slab", serif;
+	font-size: 21px;
+	font-weight: 700;
+}
+.item-baptism__text,
+.baptism__info,
+.item-baptism__quote {
+	font-size: 17px;
+	color: var(--color-grey-light);
+	line-height: 1.65;
+}
+.item-baptism__quote {
+	font-style: italic;
+	margin: 15px 0;
+	padding: 10px 0 10px 25px;
+	border-left: solid 3px var(--color-purple);
+	border-radius: 5px;
+}
+
+.item-baptism__text p {
+	margin-bottom: 25px;
+}
+
+@media (max-width: 1420px) {
+  .baptism__title  {
+    font-size: 18px;
+  }
+  .item-baptism__title{
+    font-size: 16px;
+  }
+	.item-baptism__text,
+	.baptism__info,
+	.item-baptism__quote {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+	.baptism__image {
+		margin-bottom: 10px;
+	}
+	.item-baptism__title  {
+    font-size: 13px;
+		margin: 10px 0;
+  }
+	.item-baptism__text,
+	.baptism__info {
+		padding-left: 0;
+	}
+  .item-baptism__text,
+	.baptism__info,
+	.item-baptism__quote {
+    font-size: 12px;
+  }
+	.item-baptism__quote {
+		padding: 10px 0 10px 10px;
+  }
+	.baptism__item {
+		flex: 1 1 100%;
+	}
+	.baptism__items {
+		gap: 15px;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+	}
+}

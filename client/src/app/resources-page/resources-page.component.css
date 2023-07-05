@@ -1,0 +1,87 @@
+.resources__section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.resources {
+}
+.resources__title {
+	font-size: 30px;
+	margin-bottom: 25px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  color: var(--main-font-color);
+}
+.resources__subtitle,
+.recommendation__title {
+	padding: 35px 0 15px 0;
+	font-size: 21px;
+	font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+.resources__image {
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.resources__image img {
+	border-radius: 10px;
+	max-width: 100%;
+}
+.resources__table-theology {
+}
+.table-theology,
+.table-resources,
+.recommendation__text {
+	font-size: 17px;
+	color: var(--color-grey-light);
+}
+.table-theology__th {
+	color: var(--main-font-color);
+	font-size: 15px;
+}
+.striped {
+}
+.highlight {
+}
+.responsive-table {
+}
+.resources__table-resources {
+}
+.table-resources {
+}
+.resources__recommendation {
+}
+.recommendation {
+}
+.recommendation__title {
+}
+.recommendation__text {
+}
+.recommendation__text p:first-child {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1420px) {
+  .resources__title {
+    font-size: 18px;
+  }
+  .resources__subtitle,
+	.recommendation__title {
+    font-size: 16px;
+  }
+  .table-theology,
+	.table-resources,
+	.recommendation__text,
+	.table-theology__th {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .table-theology,
+	.table-resources,
+	.recommendation__text,
+	.table-theology__th {
+    font-size: 12px;
+  }
+}

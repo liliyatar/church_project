@@ -1,0 +1,119 @@
+.relationship__section {
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+	border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+}
+.relationship {
+}
+.relationship__title {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+.title-header {
+}
+.relationship__image {
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.relationship__image img {
+	border-radius: 10px;
+	max-width: 100%;
+}
+.relationship__info {
+	margin-bottom: 35px;
+}
+.relationship__text,
+.item-relationship__quote {
+	font-size: 17px;
+	color: var(--color-grey-light);
+	line-height: 1.65;
+}
+.relationship__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+	border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+}
+.relationship__item {
+}
+.item-relationship {
+	flex: 1 1 45%;
+}
+.item-relationship__title {
+}
+.item-relationship__text {
+}
+.item-relationship__quote {
+	font-style: italic;
+	margin: 15px 0;
+	padding: 10px 0 10px 25px;
+	border-left: solid 3px var(--color-purple);
+	border-radius: 5px;
+}
+.relationship__example {
+}
+.relationship-example {
+	border-radius: 10px;
+	padding: 30px;
+	border: solid 1px rgba(104, 2, 120, 0.3);
+}
+.relationship-example__title,
+.item-relationship__title {
+	font-family: "Roboto Slab", serif;
+	font-size: 21px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+.relationship-example__text {
+}
+
+@media (max-width: 1420px) {
+  .relationship__title {
+    font-size: 18px;
+  }
+  .relationship-example__title,
+	.item-relationship__title {
+    font-size: 16px;
+  }
+	.relationship__text,
+	.item-relationship__quote {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+	.relationship__section {
+		padding-bottom: 50px;
+		margin-bottom: 50px;
+	}
+	.relationship__image,
+	.relationship__info {
+		margin-bottom: 10px;
+	}
+	.relationship-example__title,
+	.item-relationship__title  {
+    font-size: 13px;
+		margin: 10px 0;
+  }
+  .relationship__text,
+	.item-relationship__quote {
+		font-size: 12px;
+	}
+	.item-relationship__quote  {
+		padding: 10px 0 10px 10px;
+  }
+	.item-relationship {
+		flex: 1 1 100%;
+	}
+	.relationship__items {
+		gap: 15px;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+	}
+	.item-relationship__quote {
+		margin: 10px 0;
+	}
+}

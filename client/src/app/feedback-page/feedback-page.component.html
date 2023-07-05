@@ -1,50 +1,69 @@
-<app-navbar></app-navbar>
-
-<div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 center">
-          <div class="icon-block">
-            <h2 class="center brown-text" style="margin: 0;"><i class="material-icons">forum</i></h2>
-              <form
-                class="card"
-                [formGroup]="form"
-                (ngSubmit)="onSubmit()"
-                style="border-radius: 10px;"
-              >
-                <div class="card-content">
-                  <span class="card-title">Связаться с нами</span>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="small material-icons prefix">account_circle</i>
-                      <input id="icon_prefix" type="text" formControlName="name" class="validate">
-                      <label for="icon_prefix">Имя</label>
-                    </div>
-                    <div class="input-field col s12">
-                      <i class="medium material-icons prefix">phone</i>
-                      <input id="icon_telephone" type="number" formControlName="phone" class="validate">
-                      <label for="icon_telephone">Телефон</label>
-                    </div>
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">textsms</i>
-                      <textarea id="textarea1" formControlName="text" class="materialize-textarea"></textarea>
-                      <label for="textarea1">Текст</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-action">
-                  <button
-                    type="submit"
-                    class="modal-action btn waves-effect"
-                    [disabled]="form.invalid"
-                  >
-                    Отправить
-                    <i class="material-icons right">send</i>
-                  </button>
-                </div>
-              </form>
-          </div>
-        </div>
+<div class="wrapper">
+  <main class="main">
+    <div class="main__container">
+      <div class="main__header">
+        <h1 class="main__title">
+          <span class="main__title-custom">Виноградник</span> семейная церковь
+        </h1>
+        <ul class="social__media-icons">
+          <li>
+            <a href="">
+              <i class="material-icons">call</i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="material-icons">mail</i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="material-icons">video_library</i>
+            </a>
+          </li>
+        </ul>
       </div>
+      <section class="feedback__section feedback">
+        <h2 class="feedback__title">Написать нам</h2>
+        <form
+          class="card"
+          [formGroup]="form"
+          (ngSubmit)="onSubmit()"
+        >
+          <div class="card-content">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="small material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" formControlName="name" class="validate">
+                <label for="icon_prefix">Имя</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="medium material-icons prefix">phone</i>
+                <input id="icon_telephone" type="number" formControlName="phone" class="validate">
+                <label for="icon_telephone">Телефон</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">textsms</i>
+                <textarea id="textarea1" formControlName="text" class="materialize-textarea"></textarea>
+                <label for="textarea1">Текст</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-action">
+            <button
+              type="submit"
+              class="modal-action btn waves-effect"
+              [disabled]="form.invalid"
+            >
+              Отправить
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </section>
     </div>
-  </div>
+  </main>
+  <app-navbar
+    class="sidebar"
+  ></app-navbar>
+</div>

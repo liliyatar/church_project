@@ -29,7 +29,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/animations.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -75,7 +77,7 @@
               "browserTarget": "client:build:production"
             },
             "development": {
-              "browserTarget": "client:build:development",
+              "browserTarget": "client:build:development"
             }
           },
           "defaultConfiguration": "development"

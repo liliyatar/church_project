@@ -1,0 +1,109 @@
+.became-chistian__section {
+}
+.became-chistian {
+}
+.became-chistian__title {
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+.title-header {
+}
+.became-chistian__image {
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.became-chistian__image img {
+	border-radius: 10px;
+	max-width: 100%;
+}
+.became-chistian__info {
+}
+.became-chistian__quote {
+}
+.became-chistian__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	padding-top: 100px;
+	margin-top: 100px;
+	border-top: solid 1px rgba(210, 215, 217, 0.75);
+}
+.became-chistian__item {
+	flex: 1 1 45%;
+}
+.item-became-christian {
+}
+.item-became-christian__title {
+	margin-bottom: 25px;
+  font-family: "Roboto Slab", serif;
+	font-size: 21px;
+	font-weight: 700;
+}
+.item-became-christian__text,
+.item-became-christian__quote,
+.became-chistian__quote,
+.became-chistian__info {
+	font-size: 17px;
+	color: var(--color-grey-light);
+	line-height: 1.65;
+}
+.item-became-christian__quote p,
+.became-chistian__quote p {
+	font-style: italic;
+	margin: 15px 0;
+	padding: 10px 0 10px 25px;
+	border-left: solid 3px var(--color-purple);
+	border-radius: 5px;
+}
+.item-became-christian__text p,
+.item-became-christian__quote p,
+.became-chistian__quote p {
+	margin-bottom: 25px;
+}
+
+.quote-important {
+	color: var(--main-font-color);
+	font-weight: 700;
+}
+
+@media (max-width: 1420px) {
+  .became-chistian__title  {
+    font-size: 18px;
+  }
+  .item-became-christian__title {
+    font-size: 16px;
+  }
+	.item-became-christian__text,
+	.item-became-christian__quote,
+	.became-chistian__quote,
+	.became-chistian__info {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+	.became-chistian__image {
+		margin-bottom: 10px;
+	}
+	.item-became-christian__titlef {
+    font-size: 13px;
+		margin: 10px 0;
+  }
+  .item-became-christian__text,
+	.item-became-christian__quote,
+	.became-chistian__quote,
+	.became-chistian__info {
+    font-size: 12px;
+		padding: 10px 0 10px 10px;
+		padding-left: 0;
+  }
+	.became-chistian__item {
+		flex: 1 1 100%;
+	}
+	.became-chistian__items {
+		gap: 15px;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
+	}
+}

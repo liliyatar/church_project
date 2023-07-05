@@ -7,6 +7,7 @@ import { FeedbackService } from '../shared/services/feedback.service';
 @Component({
   selector: 'app-feedback-page',
   templateUrl: './feedback-page.component.html',
+  styleUrls: ['./feedback-page.component.css']
 })
 export class FeedbackPageComponent implements OnInit {
   public form: FormGroup;

@@ -1,0 +1,159 @@
+.introduction__section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.introduction {
+}
+.introduction__title,
+.introduction__heading {
+	font-size: 30px;
+	margin-bottom: 25px;
+	
+}
+
+.introduction__title {
+	color: var(--main-font-color);
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+}
+.introduction__image {
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.introduction__image img {
+	border-radius: 10px;
+	max-width: 100%;
+}
+.introduction__info {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 25px;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+	border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+}
+.introduction__bible {
+	flex: 0 0 48%;
+}
+.introduction__heading {
+	font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+.introduction__content {
+}
+.content-introduction__image {
+	overflow: hidden;
+	float: left;
+}
+.content-introduction__image img {
+	max-width: 100%;
+	border-radius: 10px;
+	margin: 0 25px 0px 0;
+}
+.introduction__text,
+.item-introduction__quote {
+	font-size: 17px;
+	color: var(--color-grey-light);
+	line-height: 1.65;
+}
+.introduction__facts {
+		flex: 1 1 45%;
+}
+.facts-introduction__title,
+.item-introduction__title {
+	margin-bottom: 25px;
+  font-family: "Roboto Slab", serif;
+	font-size: 21px;
+	font-weight: 700;
+}
+.introduction__items {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+	border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+}
+.item-introduction {
+	flex: 1 1 45%;
+}
+.item-introduction__quote {
+	font-style: italic;
+	margin: 15px 0;
+	padding: 10px 0 10px 25px;
+	border-left: solid 3px var(--color-purple);
+	border-radius: 5px;
+}
+.item-introduction__quote--important {
+	font-weight: 700;
+	color: var(--main-font-color);
+}
+.item-introduction__list {
+	list-style-type: disc;
+}
+.list {
+}
+.list__item {
+}
+
+
+@media (max-width: 1420px) {
+  .introduction__title,
+	.introduction__heading {
+    font-size: 18px;
+  }
+  .facts-introduction__title,
+	.item-introduction__title  {
+    font-size: 16px;
+  }
+	.introduction__text,
+	.item-introduction__quote,
+	.item-introduction__list {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+	.introduction__section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.introduction__image {
+		margin-bottom: 10px;
+	}
+	.facts-introduction__title,
+	.item-introduction__title {
+    font-size: 13px;
+		margin: 10px 0;
+  }
+  .introduction__text,
+	.item-introduction__quote,
+	.item-introduction__list  {
+    font-size: 12px;
+  }
+	.item-introduction,
+	.introduction__bible {
+		flex: 1 1 100%;
+	}
+	.introduction__info,
+	.introduction__items {
+		gap: 10px;
+	}
+	.introduction__items,
+	.introduction__info {
+		padding-bottom: 30px;
+		margin-bottom: 20px;
+	}
+
+	.item-introduction__quote {
+		padding: 10px 0 10px 10px;
+		margin: 10px 0;
+	}
+
+	.item-introduction__list {
+		padding-left: 25px;
+	}
+}
