@@ -7,6 +7,11 @@
   background-color: transparent;
 }
 
+.drag-target {
+  width: 100px;
+  z-index: 0;
+}
+
 nav {
   background-color: transparent;
 }
@@ -204,7 +209,7 @@ i.medium {
 
 @media only screen and (max-width : 992px) {
   .sidebar {
-    width: 0px;
+    width: 0;
   }
 	main {
     margin-left: 0;
