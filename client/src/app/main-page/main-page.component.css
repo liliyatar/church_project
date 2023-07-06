@@ -201,6 +201,7 @@
 }
 
 .items {
+  overflow: hidden;
 }
 
 .items__item {
@@ -404,17 +405,26 @@
   }
 }
 
+@media (max-width: 500px) {
+  .more-info__cards {
+    justify-content: center;
+  }
+  .cards__item {
+    flex-basis: 65%;
+  }
+}
+
 @media (max-width: 420px) {
   .more-info__section {
     padding-top: 50px;
     padding-bottom: 0;
   }
-  .cards__item {
-    flex-basis: 100%;
-  }
   .more-info__cards {
     padding: 30px 0;
     row-gap: 15px;
+  }
+  .cards__item {
+    flex-basis: 83%;
   }
   .item__header {
     font-size: 13px;

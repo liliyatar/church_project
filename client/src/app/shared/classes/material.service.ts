@@ -50,7 +50,7 @@ export class MaterialService {
     }
 
     static initSidenav(ref: ElementRef): MaterialInstance {
-        return M.Sidenav.init(ref.nativeElement);
+        return M.Sidenav.init(ref.nativeElement, { draggable: true });
     }
 
     static initDropDown(ref: ElementRef): MaterialInstance {
