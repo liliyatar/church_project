@@ -3,9 +3,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap");
 
-.drag-target {
-  width: 100px;
-}
 .sidenav-overlay {
   background-color: transparent;
 }
