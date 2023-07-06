@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { AppInitializer } from './app-initializer';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -44,6 +45,15 @@ import { BecameChristianPageComponent } from './became-christian-page/became-chr
       ExpectationPageComponent,
       BaptismPageComponent,
       BecameChristianPageComponent
+  ],
+  providers: [
+    AppInitializer,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: (appInitializer: AppInitializer) => () => appInitializer.initialize(),
+      deps: [AppInitializer],
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

@@ -7,6 +7,10 @@
   background-color: transparent;
 }
 
+nav .sidenav-trigger i {
+  position: fixed;
+}
+
 .drag-target {
   width: 100px;
   z-index: 0;
@@ -75,6 +79,7 @@ h1, h2, h3, h4, h5, p {
   padding-right: 75px;
   margin: 0 auto;
   max-width: 1760px;
+  overflow: hidden;
 }
 
 .wrapper {

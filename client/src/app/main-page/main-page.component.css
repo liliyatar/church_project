@@ -424,7 +424,7 @@
     row-gap: 15px;
   }
   .cards__item {
-    flex-basis: 83%;
+    flex-basis: 90%;
   }
   .item__header {
     font-size: 13px;
