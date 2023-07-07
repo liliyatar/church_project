@@ -72,6 +72,16 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 0px;
 }
 
+.sidenav__copyright {
+    display: flex;
+    align-items: center;
+    color: var(--color-grey-light);
+}
+
+.copyright__link {
+    color: var(--color-purple);
+}
+
 @media (max-width: 400px) {
     .sidenav {
         width: 300px;

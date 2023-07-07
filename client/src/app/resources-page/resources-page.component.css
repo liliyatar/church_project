@@ -39,6 +39,9 @@
 	color: var(--main-font-color);
 	font-size: 15px;
 }
+.table__link {
+	color: var(--color-purple);
+}
 .striped {
 }
 .highlight {
@@ -78,6 +81,16 @@
 }
 
 @media (max-width: 420px) {
+	.resources__section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.resources__image {
+		margin-bottom: 0;
+	}
+	.resources__subtitle {
+		padding: 15px 0 15px 0;
+	}
   .table-theology,
 	.table-resources,
 	.recommendation__text,
