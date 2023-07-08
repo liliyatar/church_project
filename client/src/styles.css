@@ -25,7 +25,8 @@ nav {
 	line-height: 38px;
 }
 
-.sidenav li > a > i.material-icons {
+.sidenav li > a > i.material-icons,
+.sidenav .collapsible-header i {
 	line-height: 38px;
 	margin-right: 10px;
   color: var(--color-accent);
@@ -100,10 +101,36 @@ h1, h2, h3, h4, h5, p {
   -webkit-backdrop-filter: blur( 20px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+  z-index: 1000;
 }
 
 .sidenav li>a:hover {
   border-radius: 5px;
+}
+
+.sidenav .collapsible-body li a, .sidenav.fixed .collapsible-body li a {
+  padding: 0;
+}
+
+.collapsible-body {
+}
+
+.sidenav .collapsible-body {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f6f5f7ec;
+}
+
+.sidenav li:hover {
+  border-radius: 10px;
+}
+
+.sidenav li.active {
+  border-radius: 10px;
+}
+
+.sidenav .collapsible-header {
+  justify-content: space-between;
 }
 
 nav .sidenav-trigger {

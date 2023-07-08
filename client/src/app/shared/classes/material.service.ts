@@ -68,4 +68,7 @@ export class MaterialService {
     static initTabs(ref: ElementRef): MaterialInstance {
         return M.Tabs.init(ref.nativeElement, { swipeable: true });
     }
+    static initCollapsible(ref: ElementRef): MaterialInstance {
+        return M.Collapsible.init(ref.nativeElement);
+    }
 }

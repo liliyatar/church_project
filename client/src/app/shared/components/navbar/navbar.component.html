@@ -12,23 +12,20 @@
                         Главная
                     </a>
                 </li>
-                <li class="sidenav__item">
-                    <a
-                        class="dropdown-trigger sidenav__link"
-                        data-target="dropdown1"
-                        #dropdown
-                    >
-                        Во что мы верим
-                        <i class="material-icons right">arrow_drop_down</i>
-                    </a>
-                </li>
-                <ul
-                    id='dropdown1'
-                    class='dropdown-content'
-                >
-                    <li><a routerLink="/creed" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Символ веры</a></li>
-                    <li><a routerLink="/our-values" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Наши ценности</a></li>
+                <ul class="collapsible expandable" #faith>
+                    <li class="sidenav__item">
+                        <div class="collapsible-header sidenav__link dropdown__link">
+                            Во что мы верим
+                            <i class="material-icons">arrow_drop_down</i>
+                        </div>
+
+                        <div class="collapsible-body">
+                            <li><a routerLink="/creed" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Символ веры</a></li>
+                            <li><a routerLink="/our-values" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Наши ценности</a></li>
+                        </div>
+                    </li>
                 </ul>
+
                 <li class="sidenav__item">
                     <a
                         class="waves-effect sidenav-close sidenav__link"
@@ -47,39 +44,37 @@
                         Служения
                     </a>
                 </li> -->
-                <li class="sidenav__item">
-                    <a
-                        class="dropdown-trigger sidenav__link"
-                        data-target="dropdown2"
-                        #dropdown2
-                    >
-                        Ресурсы
-                        <i class="material-icons right">arrow_drop_down</i>
-                    </a>
-                </li>
-                <ul
-                    id='dropdown2'
-                    class='dropdown-content'
-                >
-                    <li><a routerLink="/resources"class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Теология Виноградника</a></li>
-                    <li><a routerLink="/resources" class="sidenav__link sidenav__sublink" (click)="toDistance(300)">Ресурсы для духовного роста</a></li>
+
+                <ul class="collapsible expandable" #resources>
+                    <li class="sidenav__item">
+                        <div class="collapsible-header sidenav__link dropdown__link">
+                            Ресурсы
+                            <i class="material-icons">arrow_drop_down</i>
+                        </div>
+
+                        <div class="collapsible-body">
+                            <li><a routerLink="/resources"class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Теология Виноградника</a></li>
+                            <li><a routerLink="/resources" class="sidenav__link sidenav__sublink" (click)="toDistance(300)">Ресурсы для духовного роста</a></li>
+                        </div>
+                    </li>
                 </ul>
-                <li class="sidenav__item">
-                    <a
-                        class="dropdown-trigger sidenav__link"
-                        data-target="dropdown3"
-                        #dropdown3
-                    >
-                        Я здесь впервые
-                        <i class="material-icons right">arrow_drop_down</i>
-                    </a>
-                </li>
-                <ul id='dropdown3' class='dropdown-content'>
-                    <li><a routerLink="/introduction" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Библия. Во что мы верим?</a></li>
-                    <li><a routerLink="/relationship" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Как мне начать отношения с Богом?</a></li>
-                    <li><a routerLink="/expectation" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Чего ожидать в церкви?</a></li>
-                    <li><a routerLink="/baptism" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Крещение</a></li>
+                
+                <ul class="collapsible expandable" #collapsible>
+                    <li class="sidenav__item">
+                        <div class="collapsible-header sidenav__link dropdown__link">
+                            Я здесь впервые
+                            <i class="material-icons">arrow_drop_down</i>
+                        </div>
+
+                        <div class="collapsible-body">
+                            <li><a routerLink="/introduction" class="sidenav__link sidenav__sublink dropdown__link" (click)="toDistance(0)">Библия. Во что мы верим?</a></li>
+                            <li><a routerLink="/relationship" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Как мне начать отношения с Богом?</a></li>
+                            <li><a routerLink="/expectation" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Чего ожидать в церкви?</a></li>
+                            <li><a routerLink="/baptism" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Крещение</a></li>
+                        </div>
+                    </li>
                 </ul>
+
                 <li class="sidenav__item">
                     <a 
                         class="waves-effect sidenav-close sidenav__link"
