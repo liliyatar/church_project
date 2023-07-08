@@ -2,6 +2,21 @@
 }
 .became-chistian {
 }
+.became-chistian__title,
+.became-chistian__image,
+.became-chistian__info,
+.became-chistian__item {
+	opacity: 0;
+	transition: all 1.5s ease 0s;
+}
+.became-chistian__title._active,
+.became-chistian__image._active,
+.became-chistian__info._active,
+.became-chistian__item._active {
+	opacity: 1;
+	transition: all 1.5s ease 0s;
+}
+
 .became-chistian__title {
 	font-size: 30px;
 	margin-bottom: 25px;
@@ -98,12 +113,19 @@
 		padding: 10px 0 10px 10px;
 		padding-left: 0;
   }
+	.item-became-christian__text p,
+.item-became-christian__quote p,
+.became-chistian__quote p {
+	margin-bottom: 5px;
+}
 	.became-chistian__item {
 		flex: 1 1 100%;
 	}
 	.became-chistian__items {
 		gap: 15px;
-		padding-bottom: 25px;
-		margin-bottom: 25px;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+		padding-top: 25px;
+		margin-top: 25px;
 	}
 }

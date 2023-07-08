@@ -26,8 +26,8 @@
                     id='dropdown1'
                     class='dropdown-content'
                 >
-                    <li><a routerLink="/creed" class="sidenav__link sidenav__sublink">Символ веры</a></li>
-                    <li><a routerLink="/our-values" class="sidenav__link sidenav__sublink">Наши ценности</a></li>
+                    <li><a routerLink="/creed" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Символ веры</a></li>
+                    <li><a routerLink="/our-values" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Наши ценности</a></li>
                 </ul>
                 <li class="sidenav__item">
                     <a
@@ -38,6 +38,15 @@
                         Кто мы
                     </a>
                 </li>
+                <!-- <li class="sidenav__item">
+                    <a
+                        class="waves-effect sidenav-close sidenav__link"
+                        routerLink="/ministries"
+                        (click)="toDistance(0)"
+                    >
+                        Служения
+                    </a>
+                </li> -->
                 <li class="sidenav__item">
                     <a
                         class="dropdown-trigger sidenav__link"
@@ -52,7 +61,7 @@
                     id='dropdown2'
                     class='dropdown-content'
                 >
-                    <li><a routerLink="/resources"class="sidenav__link sidenav__sublink">Теология Виноградника</a></li>
+                    <li><a routerLink="/resources"class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Теология Виноградника</a></li>
                     <li><a routerLink="/resources" class="sidenav__link sidenav__sublink" (click)="toDistance(300)">Ресурсы для духовного роста</a></li>
                 </ul>
                 <li class="sidenav__item">
@@ -67,9 +76,9 @@
                 </li>
                 <ul id='dropdown3' class='dropdown-content'>
                     <li><a routerLink="/introduction" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Библия. Во что мы верим?</a></li>
-                    <li><a href="http://vinogradnik-church.com/introduction#relationship" class="sidenav__link sidenav__sublink">Как мне начать отношения с Богом?</a></li>
-                    <li><a href="http://vinogradnik-church.com/introduction#expectation" class="sidenav__link sidenav__sublink">Чего ожидать в церкви?</a></li>
-                    <li><a href="http://vinogradnik-church.com/introduction#baptism" class="sidenav__link sidenav__sublink">Крещение</a></li>
+                    <li><a routerLink="/relationship" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Как мне начать отношения с Богом?</a></li>
+                    <li><a routerLink="/expectation" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Чего ожидать в церкви?</a></li>
+                    <li><a routerLink="/baptism" class="sidenav__link sidenav__sublink" (click)="toDistance(0)">Крещение</a></li>
                 </ul>
                 <li class="sidenav__item">
                     <a 
@@ -114,10 +123,12 @@
                         </a>
                     </li>
                 </ul>
-                <p class="sidenav__text">© Виноградник, 2023</p>
-                <div class="sidenav__text sidenav__copyright">Разработка сайта:
+                <div class="sidenav__text sidenav__author">Разработка сайта:
                     <a href="https://t.me/liliia_kobzeva" class="copyright__link">@liliia_kobzeva</a>
                 </div>
+
+                <p class="sidenav__text sidenav__copyright">© Виноградник 2023</p>
+
             </div>
         </ul>
         <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">

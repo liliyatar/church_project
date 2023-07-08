@@ -11,6 +11,8 @@
   font-family: "Roboto Slab", serif;
   line-height: 1.5;
   color: var(--main-font-color);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
 }
 .resources__subtitle,
 .recommendation__title {
@@ -19,15 +21,46 @@
 	font-weight: 700;
   font-family: "Roboto Slab", serif;
 }
+.resources__subtitle,
+.recommendation__title {
+	opacity: 0;
+	transition: all 1.5s ease 0s;
+}
+.resources__subtitle._active {
+	opacity: 1;
+	transition: all 1.5s ease 0.1s;
+}
+.resources__title._active {
+	opacity: 1;
+	transition: all 0.8s ease 0.4s;
+}
+.recommendation__title._active {
+	opacity: 1;
+	transition: all 1.5s ease 0.8s;
+}
 .resources__image {
 	overflow: hidden;
 	margin-bottom: 35px;
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+.resources__image._active {
+	opacity: 1;
+	transition: all 1s ease 1s;
 }
 .resources__image img {
 	border-radius: 10px;
 	max-width: 100%;
 }
-.resources__table-theology {
+.resources__table-theology,
+.resources__table-resources {
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+.resources__table-theology._active,
+.resources__table-resources._active {
+	opacity: 1;
+	transition: all 1s ease 0.8s;
 }
 .table-theology,
 .table-resources,

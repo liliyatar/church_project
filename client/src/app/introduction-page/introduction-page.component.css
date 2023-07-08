@@ -5,10 +5,27 @@
 .introduction {
 }
 .introduction__title,
+.introduction__image,
+.introduction__heading,
+.introduction__content,
+.introduction__facts,
+.introduction__item {
+	opacity: 0;
+	transition: all 1.5s ease 0s;
+}
+.introduction__title._active,
+.introduction__image._active,
+.introduction__heading._active,
+.introduction__content._active,
+.introduction__facts._active,
+.introduction__item._active {
+	opacity: 1;
+	transition: all 1.5s ease 0s;
+}
+.introduction__title,
 .introduction__heading {
 	font-size: 30px;
 	margin-bottom: 25px;
-	
 }
 
 .introduction__title {

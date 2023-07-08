@@ -1,0 +1,22 @@
+.ministries__section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.ministries__title {
+	font-size: 30px;
+	color: var(--main-font-color);
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+}
+
+@media (max-width: 1420px) {
+	.ministries__section {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.ministries__title {
+		font-size: 18px;
+	}
+}

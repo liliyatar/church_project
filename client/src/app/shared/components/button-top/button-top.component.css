@@ -1,0 +1,24 @@
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+	font-size: 24px;
+	padding: 20px;
+	background: rgba(122, 56, 189, 0.4);
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.27);
+	backdrop-filter: blur(15.5px);
+	-webkit-backdrop-filter: blur(15.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	color: #fff;
+	cursor: pointer;
+}
+
+
+@media (max-width: 420px) {
+	.scroll-top-button {
+		font-size: 15px;
+		padding: 8px 10px;
+	}
+}

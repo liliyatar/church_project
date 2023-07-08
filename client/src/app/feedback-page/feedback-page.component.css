@@ -1,5 +1,11 @@
 .card {
-	border-radius: 10px
+	border-radius: 10px;
+	opacity: 0;
+	transition: all 1s ease 0s;
+}
+.card._active {
+	opacity: 1;
+	transition: all 1s ease 0.4s;
 }
 .feedback__section {
 	padding-top: 50px;

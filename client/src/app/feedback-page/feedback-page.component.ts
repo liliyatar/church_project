@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MaterialService } from '../shared/classes/material.service';
 import { Feedback } from '../shared/interfaces';
 import { FeedbackService } from '../shared/services/feedback.service';
+declare function animItems (): any;
 
 @Component({
   selector: 'app-feedback-page',
@@ -17,6 +18,7 @@ export class FeedbackPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    animItems();
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
       phone: new FormControl(null, Validators.required),

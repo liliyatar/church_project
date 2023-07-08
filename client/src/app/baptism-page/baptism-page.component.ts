@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare function animItems (): any;
 
 @Component({
   selector: 'app-baptism-page',
@@ -10,6 +11,7 @@ export class BaptismPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    animItems();
   }
 
 }

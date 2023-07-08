@@ -1,3 +1,4 @@
+import { ButtonTopComponent } from './shared/components/button-top/button-top.component';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,6 +20,7 @@ import { RelationshipPageComponent } from './relationship-page/relationship-page
 import { ExpectationPageComponent } from './expectation-page/expectation-page.component';
 import { BaptismPageComponent } from './baptism-page/baptism-page.component';
 import { BecameChristianPageComponent } from './became-christian-page/became-christian-page.component';
+import { MinistriesPageComponent } from './ministries-page/ministries-page.component';
 
 @NgModule({
   imports: [
@@ -29,7 +31,7 @@ import { BecameChristianPageComponent } from './became-christian-page/became-chr
     CommonModule,
     AppRoutingModule,
   ],
-  declarations: [										
+  declarations: [													
     AppComponent,
     MainPageComponent,
     FeedbackPageComponent,
@@ -43,8 +45,10 @@ import { BecameChristianPageComponent } from './became-christian-page/became-chr
       RelationshipPageComponent,
       ExpectationPageComponent,
       BaptismPageComponent,
-      BecameChristianPageComponent
-  ],
+      BecameChristianPageComponent,
+      MinistriesPageComponent,
+      ButtonTopComponent,
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -58,10 +58,14 @@ export class MaterialService {
     }
 
     static initCarousel(ref: ElementRef): MaterialInstance {
-        return M.Carousel.init(ref.nativeElement, {fullWidth: false, indicators: false, duration: 350, dist: -50, shift: 5, padding: 100});
+        return M.Carousel.init(ref.nativeElement, { duration: 350, padding: 100});
     }
 
     static initSlider(ref: ElementRef): MaterialInstance {
         return M.Slider.init(ref.nativeElement, {indicators: true, interval: 3000});
+    }
+
+    static initTabs(ref: ElementRef): MaterialInstance {
+        return M.Tabs.init(ref.nativeElement, { swipeable: true });
     }
 }

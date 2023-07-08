@@ -56,9 +56,9 @@
                 </div>
             </section>
             <section class="our-values__section our-values">
-              <h2 class="our-values__title title-header">Наши ценности</h2>
+              <h2 class="our-values__title title-header _anim-items _anim-no-hide">Наши ценности</h2>
               <div class="our-values__info">
-                <div class="our-values__text">
+                <div class="our-values__text _anim-items _anim-no-hide">
                   <p>
                     Каждая церковь «Виноградник» по-своему уникальна, но в то же время есть у нас и общие факторы, которые определяют нас как движение — это наши ценности.
                     Эти ценности описывают важные аспекты «Виноградника», которые объясняют, кто мы и почему мы делаем то, что делаем.
@@ -66,8 +66,8 @@
                   </p>
                 </div>
                 <div class="our-values__quote quote">
-                  <div class="quote__title">Основатель движения «Виноградник» Джон Уимбер:</div>
-                  <div class="quote__text">
+                  <div class="quote__title _anim-items _anim-no-hide">Основатель движения «Виноградник» Джон Уимбер:</div>
+                  <div class="quote__text _anim-items _anim-no-hide">
                     <p>
                       "То, на что мы посвящаем наше время, энергию и деньги, отражает наши истинные ценности, которые мы проживаем, в независимости от того, что мы называем нашими ценностями".
                     </p>
@@ -78,7 +78,7 @@
                 <a routerLink="/our-values" class="our-values__link" (click)="toDistance(0)">Подробнее</a>
                 о ценностях Норильского "Виноградника":
               </div> 
-              <div class="carousel items" #carousel>
+              <div class="carousel items _anim-items _anim-no-hide" #carousel>
                 <div class="carousel-item items__item item" href="#one!">
                   <i class="medium material-icons item__icon">book</i>
                   <div class="item__content">
@@ -147,7 +147,7 @@
                     <p>Прочтите наш Символ веры и узнайте о наших ценностях.</p>
                   </div>
                   <div class="item__action action">
-                    <a href="#" class="action__link">Подробнее</a>
+                    <a routerLink="/creed" (click)="toDistance(0)" class="action__link">Подробнее</a>
                   </div>
                 </div>
 
@@ -160,7 +160,7 @@
                     <p>История движения "Виноградник".</p>
                   </div>
                   <div class="item__action">
-                    <a href="#" class="action__link">Подробнее</a>
+                    <a routerLink="/history" (click)="toDistance(0)" class="action__link">Подробнее</a>
                   </div>
                 </div>
 
@@ -173,7 +173,7 @@
                     <p>Теология Виноградника и книги для духовного роста и служения.</p>
                   </div>
                   <div class="item__action action">
-                    <a href="#" class="action__link">Подробнее</a>
+                    <a routerLink="/resources" (click)="toDistance(0)" class="action__link">Подробнее</a>
                   </div>
                 </div>
 
@@ -186,10 +186,11 @@
                     <p>Много полезной информации для тех, кто проявляет интерес к христианству.</p>
                   </div>
                   <div class="item__action action">
-                    <a href="#" class="action__link">Подробнее</a>
+                    <a routerLink="/introduction" (click)="toDistance(0)" class="action__link">Подробнее</a>
                   </div>
                 </div>
               </div>
+              <app-button-top></app-button-top>
             </section>
         </div>
     </main>

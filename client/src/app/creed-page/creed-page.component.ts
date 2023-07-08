@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare function animItems (): any;
 
 @Component({
   selector: 'app-creed-page',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./creed-page.component.css']
 })
 export class CreedPageComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
+    animItems();
   }
-
 }

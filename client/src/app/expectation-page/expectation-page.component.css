@@ -1,16 +1,30 @@
 .expectation__section {
+	padding-top: 100px;
 }
 .expectation {
 }
 .expectation__title {
 	font-size: 30px;
 	margin-bottom: 25px;
+	opacity: 0;
+	transition: all 1.6s ease 0s;
+}
+.expectation__title._active {
+	opacity: 1;
+	transition: all 1.6s ease 0s;
 }
 .title-header {
+	border-bottom: none;
 }
 .expectation__image {
 	overflow: hidden;
 	margin-bottom: 35px;
+	opacity: 0;
+	transition: all 1.5s ease 0s;
+}
+.expectation__image._active {
+	opacity: 1;
+	transition: all 1.5s ease 0s;
 }
 .expectation__image img {
 	border-radius: 10px;
@@ -21,9 +35,8 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 25px;
-	padding-bottom: 100px;
-	margin-bottom: 100px;
-	border-bottom: solid 1px rgba(210, 215, 217, 0.75);
+	padding-bottom: 50px;
+	margin-bottom: 50px;
 }
 .expectation__item {
 	flex: 1 1 45%;
@@ -35,11 +48,25 @@
 	font-size: 21px;
 	font-weight: 700;
 	margin-bottom: 25px;
+	opacity: 0;
+	transition: all 1.6s ease 0s;
 }
 .item-expectation__text {
 	font-size: 17px;
 	color: var(--color-grey-light);
 	line-height: 1.65;
+	opacity: 0;
+	transition: all 1.6s ease 0s;
+}
+.item-expectation__title._active,
+.item-expectation__text._active {
+	opacity: 1;
+}
+.item-expectation__title._active {
+	transition: all 1.6s ease 0s;
+}
+.item-expectation__text._active {
+	transition: all 1s ease 0.3s;
 }
 .item-expectation__text p {
 	margin-bottom: 25px;
@@ -58,6 +85,9 @@
 }
 
 @media (max-width: 420px) {
+	.expectation__section {
+		padding-top: 50px;
+	}
 	.expectation__image {
 		margin-bottom: 10px;
 	}
@@ -76,6 +106,6 @@
 	.expectation__items {
 		gap: 15px;
 		padding-bottom: 25px;
-		margin-bottom: 25px;
+		margin-bottom: 0;
 	}
 }

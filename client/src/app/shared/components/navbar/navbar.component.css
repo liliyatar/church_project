@@ -72,7 +72,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 0px;
 }
 
-.sidenav__copyright {
+.sidenav__author {
+    margin-top: 25px;
     display: flex;
     align-items: center;
     color: var(--color-grey-light);
@@ -106,5 +107,18 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
     .sidenav__sublink {
         font-size: 10px;
+    }
+}
+
+.sidenav__copyright {
+    color: var(--color-grey-light);
+    font-size: 11px;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+    .sidenav__copyright  {
+        text-align: center;
     }
 }

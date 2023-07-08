@@ -1,15 +1,33 @@
 .relationship__section {
+	padding-top: 100px;
 	padding-bottom: 100px;
 	margin-bottom: 100px;
-	border-bottom: solid 1px rgba(210, 215, 217, 0.75);
 }
 .relationship {
 }
+.relationship__title,
+.relationship__image,
+.relationship__info,
+.relationship__item,
+.relationship__example {
+	opacity: 0;
+	transition: all 1.5s ease 0s;
+}
+.relationship__title._active,
+.relationship__image._active,
+.relationship__info._active,
+.relationship__item._active,
+.relationship__example._active {
+	opacity: 1;
+	transition: all 1.5s ease 0s;
+}
+
 .relationship__title {
 	font-size: 30px;
 	margin-bottom: 25px;
 }
 .title-header {
+	border-bottom: none;
 }
 .relationship__image {
 	overflow: hidden;
@@ -86,8 +104,9 @@
 
 @media (max-width: 420px) {
 	.relationship__section {
-		padding-bottom: 50px;
-		margin-bottom: 50px;
+		padding-top: 50px;
+		padding-bottom: 25px;
+		margin-bottom: 25px;
 	}
 	.relationship__image,
 	.relationship__info {
