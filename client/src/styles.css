@@ -133,6 +133,10 @@ h1, h2, h3, h4, h5, p {
   justify-content: space-between;
 }
 
+.sidenav .collapsible-header:hover, .sidenav.fixed .collapsible-header:hover {
+  border-radius: 10px;
+}
+
 nav .sidenav-trigger {
   margin: 0 12px;
 }
